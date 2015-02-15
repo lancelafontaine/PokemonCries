@@ -21,6 +21,10 @@ h1 {
 	font-size: 50px;
 }
 
+img {
+	pointer: cursor;
+}
+
 #wrapper {
 	position: relative;
 	margin: 0 auto;
