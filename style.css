@@ -27,3 +27,7 @@ h1 {
 	width: 500px;
 	min-width: 500px;
 }
+
+img {
+	cursor: pointer;
+}
