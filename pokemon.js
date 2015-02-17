@@ -1,20 +1,19 @@
+var randomNumber = Math.floor(Math.random()* (152 - 1)) + 1;
+var i;
+
 function playSound(soundfile) {
-	document.getElementById("soundline1").innerHTML = '<audio src='+soundfile+' autoplay="autoplay" hidden="hidden">"Oops."</audio>';
+	document.getElementById("soundline1").innerHTML = '<audio autoplay="autoplay" hidden="hidden"><source src="'+soundfile+'.mp3" /><source src="'+soundfile+'.ogg" /><source src="'+soundfile+'.mp3.wav" /></audio>';
+
 }
 
 function randomCry() {
-	var randomNumber = Math.floor(Math.random()* (152 - 1)) + 1;
-	document.getElementById("soundline1").innerHTML = '<audio src="./audio/'+randomNumber+'.mp3" autoplay="autoplay" hidden="hidden">"Oops."</audio>';
-}
-
-function chaos() {
-
+	document.getElementById("soundline1").innerHTML = '<audio autoplay="autoplay" hidden="hidden"><source src="'+randomNumber+'.mp3" /><source src="'+randomNumber+'.ogg" /><source src="'+randomNumber+'.mp3.wav" /></audio>';
 }
 
 function theme() {
 	if (document.getElementById("soundline2").innerHTML === "") {
 		document.getElementById("theme").value = "Pause Battle Theme";
-		document.getElementById("soundline2").innerHTML = '<audio src="./audio/theme.mp3" autoplay="autoplay" hidden="hidden">"Oops."</audio>';
+		document.getElementById("soundline2").innerHTML = '<audio autoplay="autoplay" hidden="hidden"><source src="theme.mp3.wav" /></audio>';
 	} else {
 		document.getElementById("theme").value = "Play Battle Theme";
 		document.getElementById("soundline2").innerHTML = "";
