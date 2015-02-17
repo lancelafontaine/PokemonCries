@@ -22,7 +22,7 @@ h1 {
 }
 
 img {
-	pointer: cursor;
+	cursor: pointer;
 }
 
 #wrapper {
